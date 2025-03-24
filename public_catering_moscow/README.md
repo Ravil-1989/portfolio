@@ -1,6 +1,6 @@
 ## Исследование рынка заведений общественного питания Москвы
-[html](https://ravil-1989.github.io/portfolio/public_catering_moscow/public_catering_moscow.html) 
 [ipynb](https://github.com/Ravil-1989/portfolio/blob/main/public_catering_moscow/public_catering_moscow.ipynb)
+[html](https://ravil-1989.github.io/portfolio/public_catering_moscow/public_catering_moscow.html)
 ### Описание проекта
 ---
 В нашем распоряжении датасет с заведениями общественного питания Москвы, составленный на основе данных сервисов Яндекс Карты и Яндекс Бизнес на лето 2022 года. Информация, размещённая в сервисе Яндекс Бизнес, могла быть добавлена пользователями или найдена в общедоступных источниках. Она носит исключительно справочный характер. Заказчик исследования — инвесторы из фонда «Shut Up and Take My Money», которые собираются попробовать себя в новой области и открыть заведение общественного питания в Москве.
