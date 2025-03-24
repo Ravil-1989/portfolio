@@ -1,5 +1,5 @@
 ## Исследование рынка заведений общественного питания Москвы
-[html](https://Ravil-1989/github.io/portfolio/public_catering_moscow/public_catering_moscow.html) 
+[html](https://github.com/Ravil-1989/portfolio/blob/main/public_catering_moscow/public_catering_moscow.html) 
 [ipynb](https://github.com/Ravil-1989/portfolio/blob/main/public_catering_moscow/public_catering_moscow.ipynb)
 ### Описание проекта
 ---
