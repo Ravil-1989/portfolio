@@ -1,5 +1,3 @@
-# business_indicators_analysis
-
 ## Анализ бизнес показателей мобильного приложения
 [ipynb](https://github.com/Ravil-1989/portfolio/blob/main/business_indicators_analysis/business_indicators_analysis.ipynb)
 [html](https://ravil-1989.github.io/portfolio/business_indicators_analysis/business_indicators_analysis.html)
