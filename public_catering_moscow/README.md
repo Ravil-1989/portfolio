@@ -12,8 +12,6 @@
 ### Навыки и инструменты
 ---
 
-Python (библиотеки pandas, matplotlib, plotly, json, IPython, folium, re), MS Power Point.
-
 - **python**
 - **pandas**
 - **matplotlib**
