@@ -1,5 +1,3 @@
-# analysis_vacancies
-
 ## Анализ базы вакансий аналитиков данных и специалистов Data Science сайта hh.ru
 [ipynb](https://github.com/Ravil-1989/portfolio/blob/main/analysis_vacancies/analysis_vacancies.ipynb)
 [html](https://ravil-1989.github.io/portfolio/analysis_vacancies/analysis_vacancies.html)
