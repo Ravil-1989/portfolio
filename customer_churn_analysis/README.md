@@ -2,6 +2,8 @@
 [ipynb](https://github.com/Ravil-1989/portfolio/blob/main/customer_churn_analysis/customer_churn_analysis.ipynb)
 [html](https://ravil-1989.github.io/portfolio/customer_churn_analysis/customer_churn_analysis.html)
 
+[portfolio](https://github.com/Ravil-1989/portfolio)
+
 ### Описание проекта
 ---
 В нашем распоряжении данные о клиентах банка «Метанпром». Банк располагается в Ярославле и областных городах: Ростов Великий и Рыбинск.
