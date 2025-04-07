@@ -2,6 +2,8 @@
 [ipynb](https://github.com/Ravil-1989/portfolio/blob/main/analysis_vacancies/analysis_vacancies.ipynb)
 [html](https://ravil-1989.github.io/portfolio/analysis_vacancies/analysis_vacancies.html)
 
+[portfolio](https://github.com/Ravil-1989/portfolio)
+
 ### Описание проекта
 ---
 В нашем распоряжении данные о вакансиях аналитиков данных и специалистов Data Science с сайта hh.ru.
