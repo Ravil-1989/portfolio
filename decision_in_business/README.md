@@ -21,7 +21,6 @@
 - **datetime**
 - **matplotlib**
 - **seaborn**
-- **plotly**
 - **scipy**
 
 ### Общий вывод
