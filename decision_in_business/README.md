@@ -1,4 +1,4 @@
-## Анализ оттока клиентов в банке
+## Принятие решений в бизнесе
 [ipynb](https://github.com/Ravil-1989/portfolio/blob/main/decision_in_business/decision_in_business.ipynb)
 [html](https://ravil-1989.github.io/portfolio/decision_in_business/decision_in_business.html)
 
