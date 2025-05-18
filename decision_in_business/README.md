@@ -20,7 +20,6 @@
 - **numpy**
 - **datetime**
 - **matplotlib**
-- **seaborn**
 - **scipy**
 
 ### Общий вывод
