@@ -19,7 +19,8 @@
 - **Postgre SQL**
 - **SQLite**
 - **WSL Ubuntu**
-- **Google Drive** 
+- **Google Drive**
+- **Yandex DataLens** 
 - **pandas**
 - **sqlite3**
 - **re**
