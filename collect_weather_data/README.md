@@ -16,6 +16,9 @@
 ---
 
 - **python**
+- **Postgre SQL**
+- **SQLite**
+- **WSL Ubuntu**
 - **pandas**
 - **sqlite3**
 - **re**
@@ -33,9 +36,7 @@
 - **psutil**
 - **sqlalchemy**
 - **psycopg2**
-- **drive**
-- **Postgre SQL**
-- **WSL Ubuntu**
+- **drive** 
 
 ### Общий вывод
 ---
