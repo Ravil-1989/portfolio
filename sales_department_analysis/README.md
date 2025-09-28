@@ -1,5 +1,3 @@
-# sales_department_analysis
-
 # Анализ базы данных отдела продаж
 [ipynb](https://github.com/Ravil-1989/portfolio/blob/main/sales_department_analysis/sales_department_analysis.ipynb)
 [html](https://ravil-1989.github.io/portfolio/sales_department_analysis/sales_department_analysis.html)
