@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>collect_weather_data</title><script type="text/javascript" src="http://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=4uuF72RC43Gly1fZrWeKQx8TpgoGUsZg-z0PE6Jn964U_ArRlw8nb3vvqAFtL4BgARuh-xxYWwa54VgG7N44kvH_s7w1ZtxoaQAiegpIt2akHZVm8J3S2u3wxO-ugjROe4qF69A1LBj6UhbG6DRF1fukqnwUEp4nM8SzGCdlkXX1O1p7P-N46B44fBXw8o0pUB-HT8nnP_gZNfJFSoJ0dyDwQE1eYQ7zujJYOPhTbxLOoif3T6VlItqKB5BzAe67lKVOE6bZNxyO3Ki_9eG0cR8-cnukESxFzL3UObS8A4F_gXzr5hp1oEiU8gy0qdJPGRHaRo1OISjbMw7AMDVgKkViL25J0SQQgO7RvjFHUkxe9vIoYqxX2HJstGGAeiDETl4YQHiETP80X-kR2pPVZ2roa7jKhQ6W9RbWThvKQ4RYihgcyNFjQG8AhUhZazhay7z9Qw-3sfurqkglOhOXyez12kpsJBVMuBTFW9qQnPRu1Q7RVzaQZHrcQCNgYPXXUYMOLACN-RGxBQOhZshZXquDioz-xMpvbyfhNrNdQWsPTHGQg1BjMlWoDVTHIBX9wq6cH0OFglmB1Cysv0029lPjArtp17GWMmMS0XEdKoerHL9NgiBZNi2oj0vHjCHQ-8h9PadsHEZl1qbungagShesvWMc7O_XVg_FxMKyZFNZ9bYGhz_gL49qobbPHv_p3ubaLEiOWRIzJS3KZgNf1MY67rs4sjcU5vmZllO6AL-z7bFvN2BAIeO1eAS67CqB64BlwHvkZzyyXSv1N1BJFA" charset="UTF-8"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>collect_weather_data</title><script type="text/javascript" src="http://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=zMSz9paHNVEaVP3X4vdfMO6CeOvhRarE4VPAB1tTfzq02P3pL7DVlEaNAlTkQEjqwVKmwWJKcNSkBE7y5LbazflVqBQBSJbn3eJWePuMhcDVaifuOb0Y9CSMFXlJwPxEzgnC8m7MBvrMrS8NPPInBNEpsALSc8XgCfs0lhX1PRyF2TrB9Mse-nl8jByVDdGidDr0o5a8vNl3f9BTmNxk0M2N1HypwwSpyrQZcVSsdzIQ6c5TdlFuNbM_PmxmJNV-iyOO2ZysaYZMlIqxUSi5YijsGyqh2iA_bSOf1n08zLGolzySmf6MI9OCUbGd0YNTcbSJUcsQXdtmhTynEY7HJ0QbTOHuNZZJfYrSL9xNfPk6bEA2UoEdBq7lyCHLpJ36nXw1-jLMP-0vr66uBv1Nl7UEeB-j9iwsXmmUkU9tnBxluyLqrr1iVLiTqpm-RUjR0kZOb3D9fpw0ArllcJe-VBTXNx-Ra438T4hX4pAYJRcekADHH9JADe4IBV8FnLERGVmemdYYNFA0RRlbQXjefwW5dD-qc5FKlNFUzFP9sRw5Vt5blN8iof14FrqSyihT3OKCYUGXuCBQryzn4hxYuOwZIkZqdID7ravnK5jaPCfAO7mDTjFWlVzAxTrAY_v6NIJSqzSMq21QwF02n6dAHwDboeJXFt7k9czRHjB5PDQ1XAN3tMUjJB5z1sDBJS7SytdnRtquSqq-zybVqCLD5y7sce7ua3wSZsSGV1ie3DmBeljb7pEebam1EDqrzhtLXakX8b2sw7gGNDO4k3LF2g" charset="UTF-8"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -9965,6 +9965,82 @@ a.anchor-link {
     <span class="n">conn</span><span class="o">.</span><span class="n">rollback</span><span class="p">()</span>
     <span class="kn">import</span><span class="w"> </span><span class="nn">traceback</span>
     <span class="n">traceback</span><span class="o">.</span><span class="n">print_exc</span><span class="p">()</span>
+
+<span class="k">finally</span><span class="p">:</span>
+    <span class="k">if</span> <span class="s1">'conn'</span> <span class="ow">in</span> <span class="nb">locals</span><span class="p">():</span>
+        <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">🔌 Соединение закрыто"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e51c0660-5d87-42d9-acbb-d19e40b29195">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h4 id="%D0%92%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D0%BC-%D1%81%D0%B6%D0%B0%D1%82%D0%B8%D0%B5-%D0%B1%D0%B0%D0%B7%D1%8B-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%B4%D0%BB%D1%8F-%D1%83%D0%BC%D0%B5%D0%BD%D1%8C%D1%88%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B5%D0%B5-%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%80%D0%B0">Выполним сжатие базы данных для уменьшения ее размера<a class="anchor-link" href="#%D0%92%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D0%BC-%D1%81%D0%B6%D0%B0%D1%82%D0%B8%D0%B5-%D0%B1%D0%B0%D0%B7%D1%8B-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%B4%D0%BB%D1%8F-%D1%83%D0%BC%D0%B5%D0%BD%D1%8C%D1%88%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B5%D0%B5-%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%80%D0%B0">¶</a></h4>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=b3354f57-852a-458d-87af-3c0b76a4b010">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Устанавливаем временный каталог на тот же диск</span>
+<span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">'TEMP'</span><span class="p">]</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">'С:\temp'</span>
+<span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">'TEMP'</span><span class="p">],</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="c1"># Проверка доступности диска</span>
+    <span class="n">test_file</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">'С:\test_sqlite_write.tmp'</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">test_file</span><span class="p">,</span> <span class="s1">'wb'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">b</span><span class="s1">'test'</span><span class="p">)</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">test_file</span><span class="p">)</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"✅ Проверка диска успешна"</span><span class="p">)</span>
+    
+    <span class="c1"># Подключаемся к базе с явным указанием timeout</span>
+    <span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">db_path</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
+    <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"🧹 Оптимизация базы данных..."</span><span class="p">)</span>
+    
+    <span class="c1"># Настройки оптимизации</span>
+    <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"PRAGMA journal_mode = DELETE"</span><span class="p">)</span>
+    <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"PRAGMA page_size = 4096"</span><span class="p">)</span>
+    <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"PRAGMA cache_size = -2000"</span><span class="p">)</span>
+    
+    <span class="c1"># Безопасное сжатие</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"🔍 Выполняем сжатие..."</span><span class="p">)</span>
+    <span class="n">temp_db</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">'D:\temp_compressed.db'</span>
+    <span class="k">with</span> <span class="n">tqdm</span><span class="p">(</span><span class="n">desc</span><span class="o">=</span><span class="s2">"Сжатие"</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="s2">"блок"</span><span class="p">)</span> <span class="k">as</span> <span class="n">pbar</span><span class="p">:</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="sa">f</span><span class="s2">"VACUUM INTO '</span><span class="si">{</span><span class="n">temp_db</span><span class="si">}</span><span class="s2">'"</span><span class="p">)</span>
+        <span class="n">pbar</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    
+    <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    
+    <span class="c1"># Заменяем оригинальную базу</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">db_path</span><span class="p">)</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">temp_db</span><span class="p">,</span> <span class="n">db_path</span><span class="p">)</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">✅ База успешно сжата"</span><span class="p">)</span>
+    
+    <span class="c1"># Проверяем новый размер</span>
+    <span class="n">size_mb</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">getsize</span><span class="p">(</span><span class="n">db_path</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1024</span> <span class="o">*</span> <span class="mi">1024</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"📏 Новый размер: </span><span class="si">{</span><span class="n">size_mb</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> MB"</span><span class="p">)</span>
+
+<span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">❌ Ошибка: </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="s1">'temp_db'</span> <span class="ow">in</span> <span class="nb">locals</span><span class="p">()</span> <span class="ow">and</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">temp_db</span><span class="p">):</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">temp_db</span><span class="p">)</span>
 
 <span class="k">finally</span><span class="p">:</span>
     <span class="k">if</span> <span class="s1">'conn'</span> <span class="ow">in</span> <span class="nb">locals</span><span class="p">():</span>
