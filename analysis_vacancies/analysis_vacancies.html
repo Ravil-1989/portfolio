@@ -7731,7 +7731,7 @@ soft_skills_from_description - софт скиллы из описания ва�
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Requirement already satisfied: xlrd in c:\programdata\anaconda3\envs\practicum\lib\site-packages (2.0.1)
+<pre>Requirement already satisfied: xlrd in c:\programdata\anaconda3\envs\practicum\lib\site-packages (2.0.2)
 Note: you may need to restart the kernel to use updated packages.
 </pre>
 </div>
@@ -12231,11 +12231,11 @@ Ozon
 «МТС», Digital                                   7
 ПАО «Промсвязьбанк», Бизнес и инфраструктура     5
 Сбер. IT                                         4
-МегаФон, IT                                      2
-РЕСО-Гарантия, САО, IT                           2
 Лента, федеральная розничная сеть, IT            2
-Компания «СПОРТМАСТЕР», Sportmaster Lab          1
+РЕСО-Гарантия, САО, IT                           2
+МегаФон, IT                                      2
 Леруа Мерлен. Центральный офис                   1
+Почта Банк. Экспертам и руководителям            1
 Name: department, dtype: int64</pre>
 </div>
 </div>
@@ -12255,8 +12255,8 @@ Ozon Информационные технологии    20
 Газпромбанк                       17
 Сбер. IT                          14
 ПАО ВТБ, Технологический блок     11
-МегаФон, IT                        6
 ГК Иннотех | Большие данные        6
+МегаФон, IT                        6
 билайн: ИТ, Data, Digital          6
 ДОМ.РФ ИТ                          6
 Name: department, dtype: int64</pre>
@@ -12284,8 +12284,8 @@ Name: department, dtype: int64</pre>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">vacancies_da</span><span class="p">[</span><span class="s1">'department'</span><span class="p">]</span> <span class="o">=</span> <span class="n">vacancies_da</span><span class="p">[</span><span class="s1">'department'</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">({</span><span class="s1">' Альфа-Банк'</span><span class="p">:</span> <span class="s1">'Альфа-Банк'</span><span class="p">})</span>
-<span class="n">vacancies_ds</span><span class="p">[</span><span class="s1">'department'</span><span class="p">]</span> <span class="o">=</span> <span class="n">vacancies_ds</span><span class="p">[</span><span class="s1">'department'</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">({</span><span class="s1">'билайн: ИТ, Data, Digital'</span><span class="p">:</span> <span class="s1">'Билайн: ИТ, Data, Digital'</span><span class="p">,</span>\
-                                                                 <span class="s1">'билайн'</span><span class="p">:</span> <span class="s1">'Билайн'</span><span class="p">})</span>
+<span class="n">vacancies_ds</span><span class="p">[</span><span class="s1">'department'</span><span class="p">]</span> <span class="o">=</span> <span class="n">vacancies_ds</span><span class="p">[</span><span class="s1">'department'</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">({</span><span class="s1">'билайн: ИТ, Data, Digital'</span><span class="p">:</span>\
+                                                                 <span class="s1">'Билайн: ИТ, Data, Digital'</span><span class="p">,</span> <span class="s1">'билайн'</span><span class="p">:</span> <span class="s1">'Билайн'</span><span class="p">})</span>
 <span class="n">display</span><span class="p">(</span><span class="n">vacancies_da</span><span class="p">[</span><span class="s1">'department'</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">()</span>
 <span class="n">display</span><span class="p">(</span><span class="n">vacancies_ds</span><span class="p">[</span><span class="s1">'department'</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
@@ -12306,11 +12306,11 @@ Name: department, dtype: int64</pre>
 «МТС», Digital                                   7
 ПАО «Промсвязьбанк», Бизнес и инфраструктура     5
 Сбер. IT                                         4
-МегаФон, IT                                      2
-РЕСО-Гарантия, САО, IT                           2
 Лента, федеральная розничная сеть, IT            2
-Компания «СПОРТМАСТЕР», Sportmaster Lab          1
+РЕСО-Гарантия, САО, IT                           2
+МегаФон, IT                                      2
 Леруа Мерлен. Центральный офис                   1
+Почта Банк. Экспертам и руководителям            1
 Name: department, dtype: int64</pre>
 </div>
 </div>
@@ -12330,10 +12330,10 @@ Ozon Информационные технологии    20
 Газпромбанк                       17
 Сбер. IT                          14
 ПАО ВТБ, Технологический блок     11
-МегаФон, IT                        6
-Билайн: ИТ, Data, Digital          6
-ДОМ.РФ ИТ                          6
 ГК Иннотех | Большие данные        6
+МегаФон, IT                        6
+ДОМ.РФ ИТ                          6
+Билайн: ИТ, Data, Digital          6
 Name: department, dtype: int64</pre>
 </div>
 </div>
@@ -13551,13 +13551,14 @@ dtype: object</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [53]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">hard_skills_da_series</span> <span class="o">=</span> <span class="n">hard_skills_da_series</span><span class="p">[</span><span class="o">~</span><span class="n">hard_skills_da_series</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">'Аналитик'</span><span class="p">,</span> <span class="s1">'Аналитик BI'</span><span class="p">,</span> <span class="s1">'Аналитик данных'</span><span class="p">,</span> \
-                                                            <span class="s1">'Анализ данных'</span><span class="p">,</span> <span class="s1">'Машинное обучение'</span><span class="p">,</span><span class="s1">'Данные'</span><span class="p">,</span> <span class="s1">'Data Engineer'</span><span class="p">,</span>
-                                                            <span class="s1">'Data Science'</span><span class="p">,</span> <span class="s1">'Junior'</span><span class="p">,</span> <span class="s1">'Аналитическое мышление'</span><span class="p">,</span> \
-                                                            <span class="s1">'Грамотная речь и письмо'</span><span class="p">,</span><span class="s1">'Деловая коммуникация'</span><span class="p">,</span> \
-                                                            <span class="s1">'Корпоративная этика'</span><span class="p">,</span> <span class="s1">'Лидерство'</span><span class="p">,</span> <span class="s1">'Навыки презентации'</span><span class="p">,</span> \
-                                                            <span class="s1">'Обучение и развитие'</span><span class="p">,</span> <span class="s1">'Планирование'</span><span class="p">,</span>\
-                                                            <span class="s1">'Организаторские навыки'</span><span class="p">,</span> <span class="s1">'Работа в условиях многозадачности'</span><span class="p">,</span>\
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">hard_skills_da_series</span> <span class="o">=</span> <span class="n">hard_skills_da_series</span><span class="p">[</span><span class="o">~</span><span class="n">hard_skills_da_series</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">'Аналитик'</span><span class="p">,</span> <span class="s1">'Аналитик BI'</span><span class="p">,</span> \
+                                                            <span class="s1">'Аналитик данных'</span><span class="p">,</span> <span class="s1">'Анализ данных'</span><span class="p">,</span> <span class="s1">'Машинное обучение'</span><span class="p">,</span>\
+                                                            <span class="s1">'Данные'</span><span class="p">,</span> <span class="s1">'Data Engineer'</span><span class="p">,</span> <span class="s1">'Data Science'</span><span class="p">,</span> <span class="s1">'Junior'</span><span class="p">,</span>\
+                                                            <span class="s1">'Аналитическое мышление'</span><span class="p">,</span> <span class="s1">'Грамотная речь и письмо'</span><span class="p">,</span>\
+                                                            <span class="s1">'Деловая коммуникация'</span><span class="p">,</span> <span class="s1">'Корпоративная этика'</span><span class="p">,</span> <span class="s1">'Лидерство'</span><span class="p">,</span>\
+                                                            <span class="s1">'Навыки презентации'</span><span class="p">,</span> <span class="s1">'Обучение и развитие'</span><span class="p">,</span> <span class="s1">'Планирование'</span><span class="p">,</span>\
+                                                            <span class="s1">'Организаторские навыки'</span><span class="p">,</span>\
+                                                            <span class="s1">'Работа в условиях многозадачности'</span><span class="p">,</span>\
                                                             <span class="s1">'Работа в команде'</span><span class="p">,</span> <span class="s1">'Расстановка приоритетов'</span><span class="p">,</span>\
                                                             <span class="s1">'Системный подход'</span><span class="p">,</span><span class="s1">'Стратегическое мышление'</span><span class="p">,</span>\
                                                             <span class="s1">'Умение принимать решения'</span><span class="p">,</span>\
@@ -13605,10 +13606,10 @@ Power BI             55
 Big Data             40
 A/B тестирование     26
 Tableau              22
-MS Excel             19
 Мат статистика       19
-Apache Airflow       14
+MS Excel             19
 Python (Pandas)      14
+Apache Airflow       14
 dtype: int64</pre>
 </div>
 </div>
@@ -18021,11 +18022,12 @@ dtype: object</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [104]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">hard_skills_ds_series</span> <span class="o">=</span> <span class="n">hard_skills_ds_series</span><span class="p">[</span><span class="o">~</span><span class="n">hard_skills_ds_series</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">'Data Science'</span><span class="p">,</span> <span class="s1">'Data Scientist'</span><span class="p">,</span> <span class="s1">'Hedge Fund'</span><span class="p">,</span>\
-                                                            <span class="s1">'IT'</span><span class="p">,</span> <span class="s1">'Research'</span><span class="p">,</span> <span class="s1">'Анализ данных'</span><span class="p">,</span> <span class="s1">'Аналитик'</span><span class="p">,</span> <span class="s1">'ИИ'</span><span class="p">,</span> \
-                                                            <span class="s1">'Машинное обучение'</span><span class="p">,</span> <span class="s1">'Поиск'</span><span class="p">,</span> <span class="s1">'Статистика'</span><span class="p">,</span> <span class="s1">'Экономика'</span><span class="p">,</span>\
-                                                            <span class="s1">'Аналитическое мышление'</span><span class="p">,</span> <span class="s1">'Высокие коммуникативные навыки'</span><span class="p">,</span> \
-                                                            <span class="s1">'Грамотность'</span><span class="p">,</span> <span class="s1">'Деловая коммуникация'</span><span class="p">,</span> <span class="s1">'Коммуникабельность'</span><span class="p">,</span> \
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">hard_skills_ds_series</span> <span class="o">=</span> <span class="n">hard_skills_ds_series</span><span class="p">[</span><span class="o">~</span><span class="n">hard_skills_ds_series</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">'Data Science'</span><span class="p">,</span> <span class="s1">'Data Scientist'</span><span class="p">,</span>\
+                                                            <span class="s1">'Hedge Fund'</span><span class="p">,</span><span class="s1">'IT'</span><span class="p">,</span> <span class="s1">'Research'</span><span class="p">,</span> <span class="s1">'Анализ данных'</span><span class="p">,</span> <span class="s1">'Аналитик'</span><span class="p">,</span>\
+                                                            <span class="s1">'ИИ'</span><span class="p">,</span> <span class="s1">'Машинное обучение'</span><span class="p">,</span> <span class="s1">'Поиск'</span><span class="p">,</span> <span class="s1">'Статистика'</span><span class="p">,</span>\
+                                                            <span class="s1">'Экономика'</span><span class="p">,</span> <span class="s1">'Аналитическое мышление'</span><span class="p">,</span>\
+                                                            <span class="s1">'Высокие коммуникативные навыки'</span><span class="p">,</span> <span class="s1">'Грамотность'</span><span class="p">,</span>\
+                                                            <span class="s1">'Деловая коммуникация'</span><span class="p">,</span> <span class="s1">'Коммуникабельность'</span><span class="p">,</span> \
                                                             <span class="s1">'Лидерство'</span><span class="p">,</span> <span class="s1">'Мотивация персонала'</span><span class="p">,</span> <span class="s1">'Обучение и развитие'</span><span class="p">,</span> \
                                                             <span class="s1">'Организаторские навыки'</span><span class="p">,</span> <span class="s1">'Планирование карьеры'</span><span class="p">,</span> \
                                                             <span class="s1">'Проведение презентаций'</span><span class="p">,</span> <span class="s1">'Публичные выступления'</span><span class="p">,</span> \
@@ -22652,7 +22654,8 @@ count_skills_percent - количество компаний по названи
 <span class="n">data_crosstab_employer</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'employer'</span><span class="p">,</span> <span class="s1">'count_employers'</span><span class="p">]</span>
 <span class="n">data_crosstab_employer</span><span class="p">[</span><span class="s1">'count_employers_percent'</span><span class="p">]</span> <span class="o">=</span> <span class="nb">round</span><span class="p">((</span><span class="n">data_crosstab_employer</span><span class="p">[</span><span class="s1">'count_employers'</span><span class="p">]</span> <span class="o">/</span>\
                                                            <span class="n">data_crosstab_employer</span><span class="p">[</span><span class="s1">'count_employers'</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span> <span class="o">*</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-<span class="n">data_crosstab_employer</span> <span class="o">=</span> <span class="n">data_crosstab_employer</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span> <span class="o">=</span> <span class="s1">'count_employers'</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">data_crosstab_employer</span> <span class="o">=</span> <span class="n">data_crosstab_employer</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span> <span class="o">=</span> <span class="s1">'count_employers'</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span>\
+                                                                                                                 <span class="kc">True</span><span class="p">)</span>
 <span class="n">data_crosstab_employer</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -22781,7 +22784,7 @@ count_skills_percent - количество компаний по названи
     <span class="n">data_crosstab_employer</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'employer'</span><span class="p">,</span> <span class="s1">'count_employers'</span><span class="p">]</span>
     <span class="n">data_crosstab_employer</span><span class="p">[</span><span class="s1">'count_employers_percent'</span><span class="p">]</span> <span class="o">=</span> <span class="nb">round</span><span class="p">((</span><span class="n">data_crosstab_employer</span><span class="p">[</span><span class="s1">'count_employers'</span><span class="p">]</span> <span class="o">/</span>\
                                                            <span class="n">data_crosstab_employer</span><span class="p">[</span><span class="s1">'count_employers'</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span> <span class="o">*</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-    <span class="n">data_crosstab_employer</span> <span class="o">=</span> <span class="n">data_crosstab_employer</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span> <span class="o">=</span> <span class="s1">'count_employers'</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span>\
+    <span class="n">data_crosstab_employer</span> <span class="o">=</span> <span class="n">data_crosstab_employer</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">'count_employers'</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span>\
                                                                                                                      <span class="kc">True</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">data_crosstab_employer</span>
 </pre></div>
@@ -26922,8 +26925,8 @@ count_employment_percent - количество вакансий с этим т�
     <span class="n">crosstab_employment_da</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'employment'</span><span class="p">,</span> <span class="s1">'count_employment'</span><span class="p">]</span>
     <span class="n">crosstab_employment_da</span><span class="p">[</span><span class="s1">'count_employment_percent'</span><span class="p">]</span> <span class="o">=</span> <span class="nb">round</span><span class="p">((</span><span class="n">crosstab_employment_da</span><span class="p">[</span><span class="s1">'count_employment'</span><span class="p">]</span> <span class="o">/</span>\
                                                               <span class="n">crosstab_employment_da</span><span class="p">[</span><span class="s1">'count_employment'</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span> <span class="o">*</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-    <span class="n">crosstab_employment_da</span> <span class="o">=</span> <span class="n">crosstab_employment_da</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span> <span class="o">=</span> <span class="s1">'count_employment'</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span>\
-                                                                                                                     <span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">crosstab_employment_da</span> <span class="o">=</span> <span class="n">crosstab_employment_da</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">'count_employment'</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span>\
+                                                                                                                    <span class="o">=</span><span class="kc">True</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">crosstab_employment_da</span>
 </pre></div>
 </div>
@@ -27982,7 +27985,8 @@ count_schedule_percent - количество вакансий аналитик�
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">make_plot_schedule</span><span class="p">(</span><span class="n">dataset1</span><span class="p">,</span> <span class="n">dataset2</span><span class="p">,</span> <span class="n">title1</span><span class="p">):</span>
 
-    <span class="n">dataset1</span><span class="p">[</span><span class="s1">'text'</span><span class="p">]</span> <span class="o">=</span> <span class="n">dataset1</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">x</span><span class="p">[</span><span class="s2">"count_schedule"</span><span class="p">]</span><span class="si">:</span><span class="s1">.0f</span><span class="si">}</span><span class="s1">&lt;br&gt;</span><span class="si">{</span><span class="n">x</span><span class="p">[</span><span class="s2">"count_schedule_percent"</span><span class="p">]</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">%'</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">dataset1</span><span class="p">[</span><span class="s1">'text'</span><span class="p">]</span> <span class="o">=</span> <span class="n">dataset1</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">x</span><span class="p">[</span><span class="s2">"count_schedule"</span><span class="p">]</span><span class="si">:</span><span class="s1">.0f</span><span class="si">}</span><span class="s1">&lt;br&gt;</span><span class="si">{</span><span class="n">x</span><span class="p">[</span><span class="s2">"count_schedule_percent"</span><span class="p">]</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">%'</span><span class="p">,</span>\
+                                      <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
     <span class="n">fig1</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">dataset1</span><span class="p">,</span>
                   <span class="n">x</span><span class="o">=</span><span class="s1">'schedule'</span><span class="p">,</span>
                   <span class="n">y</span><span class="o">=</span><span class="s1">'count_schedule'</span><span class="p">,</span>
@@ -27992,7 +27996,8 @@ count_schedule_percent - количество вакансий аналитик�
                        <span class="n">yaxis_title</span><span class="o">=</span><span class="s1">'Количество вакансий'</span><span class="p">,</span>
                        <span class="n">font_size</span><span class="o">=</span><span class="mi">13</span><span class="p">)</span>
 
-    <span class="n">dataset2</span><span class="p">[</span><span class="s1">'text'</span><span class="p">]</span> <span class="o">=</span> <span class="n">dataset2</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">x</span><span class="p">[</span><span class="s2">"count_schedule"</span><span class="p">]</span><span class="si">:</span><span class="s1">.0f</span><span class="si">}</span><span class="s1">&lt;br&gt;</span><span class="si">{</span><span class="n">x</span><span class="p">[</span><span class="s2">"count_schedule_percent"</span><span class="p">]</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">%'</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">dataset2</span><span class="p">[</span><span class="s1">'text'</span><span class="p">]</span> <span class="o">=</span> <span class="n">dataset2</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">x</span><span class="p">[</span><span class="s2">"count_schedule"</span><span class="p">]</span><span class="si">:</span><span class="s1">.0f</span><span class="si">}</span><span class="s1">&lt;br&gt;</span><span class="si">{</span><span class="n">x</span><span class="p">[</span><span class="s2">"count_schedule_percent"</span><span class="p">]</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">%'</span><span class="p">,</span>\
+                                      <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
     <span class="n">fig2</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">dataset2</span><span class="p">,</span>
                   <span class="n">x</span><span class="o">=</span><span class="s1">'schedule'</span><span class="p">,</span>
                   <span class="n">y</span><span class="o">=</span><span class="s1">'count_schedule'</span><span class="p">,</span>
@@ -28247,8 +28252,8 @@ count_schedule_percent - количество вакансий аналитик�
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[251]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>max   2024-04-30 12:51:55
-min   2024-03-06 08:13:00
+<pre>min   2024-03-06 08:13:00
+max   2024-04-30 12:51:55
 Name: published_at, dtype: datetime64[ns]</pre>
 </div>
 </div>
@@ -28286,8 +28291,8 @@ Name: published_at, dtype: datetime64[ns]</pre>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[252]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>max   2024-04-30 11:41:03
-min   2024-02-29 15:01:35
+<pre>min   2024-02-29 15:01:35
+max   2024-04-30 11:41:03
 Name: published_at, dtype: datetime64[ns]</pre>
 </div>
 </div>
