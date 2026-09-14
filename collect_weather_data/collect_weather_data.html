@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>collect_weather_data</title><script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=whj0A9rD1jtLlui5SosKFUKF47_zV_8zUtaUyhIX7yQvd-icuf-0yDGVof2L3mUsgH4c5cT5J5nU6wDzXqovXmIfzFXiZIzguAdheax-XryH-RqfDVXu25RGTnX4wB2VvbuPMsNwZsk3WhZilaelefY89u8bRvftGLiKWNk95wMsf4Z1o5dr_tZ_wSeCsAjLTKCPoQhkFPdAw3jdI92RkntmO_TDhHQ9qLZSF6KifBpP_PMtrCIcl6U6UCxAvQhDj95K3eTPlINiYkhbw1fd3R6RBJu_iGU6p3nst3t3RhiK0KwlhtG2F8syGTa5WGAd7SOrT9bBFo2IMNVCI3mBas3JSKA-vpRdzyWOEIgeP5-bWoap99McSAcC0611tLQddI-NQtlY9T_2i7xkZRh06tC68q8A8akJtiJ30YSoAj6XYvXHHsJ2xsj5lF7w8MPxaOW-46BJjVPmDzKNKOIY0KANcM8lpR-9_5l9h5Z5UeJPqbfkl8CSa-Y5ILzpPO8IBSx_23tJTWRBdGOzWmFtRtzdGZ8ue1fxAh0uZgtxMYmTxzPuXinKE-vsbUQ26nfgTX7pxBw5tIS8iupr7N7a7qX7N2ZsJMjCrbri1VoODYRXORNxi2vC5IGaHydi_ZXPh6R_Nka87GWp8XUHIKSM6Wv2-GSRgoa05qsDwLG5j4aQG0x-PuFWKwASc6-4lvwk2-AutS8vT7Q1VabVhV6-ubLcNq-_IPFU4vo9SqtfTx5JLd2uBe7IzqWz194mZp44krwSI2FKqXC2WtsvSIJu1A" charset="UTF-8"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>collect_weather_data</title><script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=5-KKfWEhe5WxjmccLBAuUjM9VjdM9JK5hbn1gRrjGKW1jd1jtDRVHglHoeKdepzNmxdIz7ODctmYuivXT9sVitSkhLxKUTI6nlkLYuJwNx9eQghvCTy9XlbW0n9EOMVLZC8kfbMONFEmWARyV9hQmiT0x9wcG4mZbsrFHlLc7RFjLeZ4eT10DylaWmyxDbCt7QzK8HDt2wsP8c3EPvv9nOC2DJR5cmLtIbxhCJofItHg3jolvk-XAJwPco4iraS2aDknJpJwUYCfI-EL6DHBgJrnZ1kIQkq3rJrPHpATRjxsIR3fiQ-imdYXb5vFh3DqCIbSL-STGTvYKDoHZYC9c4XuWsD47VeLd3IYLB7eMvS846BqtGJ-XhZH9TfmmNMe4J9eq3XS-1FB5ljx70UqzT81hxe6jHgTUm4ia-SXb7pVxYmlGfq9q1R8oOAoKwSVK4BezX5X-zHQHkNwgU-aK8wcbNKqvinGqEOMOZekI3Jeuw1adp70EkAML1tC7IzkoB0JYm3pLKrL6kbhYIECA6syWUaaRak9O_yqDui7Nno_rCtzJgj4QUZowRUYn0mLR9ArDGh7P6QKEv3Oy21ZM6WBOFvArxhnlPBkpoxk7cZn6CYOU6KO0Vse911cyPiZesolhA-pXY6szR-3suePXAf_p857llHB2uM6-ZBkxhB8VFzlN1sGHiW15yqsLPedip6MZCj3G6qW1TozCxoaAQs-9VAgaUup_7-XqTfi2wxh8pt1-1ctOYhuu6VKYM1ZprqRU6zuGhqDkoV0-3TyyA" charset="UTF-8"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -11916,7 +11916,7 @@ all_russian_cities
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>После восстановления проброса портов подключение к базе данных <code>all_russian_cities</code> в Yandex DataLens было успешно восстановлено.</p>
-<p>Таким образом, причиной ошибки после обновления Windows 11 оказался конфликт за порт <code>5432</code>: порт был занят отдельным экземпляром PostgreSQL 17 в Windows, тогда как проект использует PostgreSQL 16 в WSL.</p>
+<p>Таким образом, причиной ошибки после обновления Windows 11 стала потеря прежней схемы подключения к PostgreSQL в WSL: порт 5432 был занят отдельным экземпляром PostgreSQL 17 в Windows, а portproxy к PostgreSQL 16 в WSL отсутствовал.</p>
 </div>
 </div>
 </div>
@@ -11927,7 +11927,7 @@ all_russian_cities
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="%D0%A7%D1%82%D0%BE%D0%B1%D1%8B-%D0%B8%D0%B7%D0%B1%D0%B5%D0%B6%D0%B0%D1%82%D1%8C-%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B3%D0%BE-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0-PostgreSQL-17-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B8%D0%BC-%D1%80%D0%B5%D0%B6%D0%B8%D0%BC-%D0%B5%D0%B3%D0%BE-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0-%D0%BD%D0%B0-Manual-%D0%B2-powershell">Чтобы избежать автоматического запуска PostgreSQL 17 изменим режим его запуска на Manual в powershell<a class="anchor-link" href="#%D0%A7%D1%82%D0%BE%D0%B1%D1%8B-%D0%B8%D0%B7%D0%B1%D0%B5%D0%B6%D0%B0%D1%82%D1%8C-%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B3%D0%BE-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0-PostgreSQL-17-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B8%D0%BC-%D1%80%D0%B5%D0%B6%D0%B8%D0%BC-%D0%B5%D0%B3%D0%BE-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0-%D0%BD%D0%B0-Manual-%D0%B2-powershell">¶</a></h4>
+<h4 id="%D0%A7%D1%82%D0%BE%D0%B1%D1%8B-%D0%B8%D0%B7%D0%B1%D0%B5%D0%B6%D0%B0%D1%82%D1%8C-%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B3%D0%BE-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0-PostgreSQL-17,-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B8%D0%BC-%D1%80%D0%B5%D0%B6%D0%B8%D0%BC-%D0%B5%D0%B3%D0%BE-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0-%D0%BD%D0%B0-Manual-%D0%B2-powershell">Чтобы избежать автоматического запуска PostgreSQL 17, изменим режим его запуска на Manual в powershell<a class="anchor-link" href="#%D0%A7%D1%82%D0%BE%D0%B1%D1%8B-%D0%B8%D0%B7%D0%B1%D0%B5%D0%B6%D0%B0%D1%82%D1%8C-%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B3%D0%BE-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0-PostgreSQL-17,-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B8%D0%BC-%D1%80%D0%B5%D0%B6%D0%B8%D0%BC-%D0%B5%D0%B3%D0%BE-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0-%D0%BD%D0%B0-Manual-%D0%B2-powershell">¶</a></h4>
 </div>
 </div>
 </div>
@@ -11950,7 +11950,7 @@ all_russian_cities
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="%D0%9F%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%B8%D0%BC,-%D1%87%D1%82%D0%BE-%D1%80%D0%B5%D0%B6%D0%B8%D0%BC-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0-PostgreSQL-17-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B8%D0%BB%D1%8F-%D0%BD%D0%B0-Manual-%D0%B2-powershell">Проверим, что режим запуска PostgreSQL 17 измениля на Manual в powershell<a class="anchor-link" href="#%D0%9F%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%B8%D0%BC,-%D1%87%D1%82%D0%BE-%D1%80%D0%B5%D0%B6%D0%B8%D0%BC-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0-PostgreSQL-17-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B8%D0%BB%D1%8F-%D0%BD%D0%B0-Manual-%D0%B2-powershell">¶</a></h4>
+<h4 id="%D0%9F%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%B8%D0%BC,-%D1%87%D1%82%D0%BE-%D1%80%D0%B5%D0%B6%D0%B8%D0%BC-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0-PostgreSQL-17-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B8%D0%BB%D1%81%D1%8F-%D0%BD%D0%B0-Manual-%D0%B2-powershell">Проверим, что режим запуска PostgreSQL 17 изменился на Manual в powershell<a class="anchor-link" href="#%D0%9F%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%B8%D0%BC,-%D1%87%D1%82%D0%BE-%D1%80%D0%B5%D0%B6%D0%B8%D0%BC-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0-PostgreSQL-17-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B8%D0%BB%D1%81%D1%8F-%D0%BD%D0%B0-Manual-%D0%B2-powershell">¶</a></h4>
 </div>
 </div>
 </div>
@@ -12028,7 +12028,7 @@ postgresql-x64-17 Stopped    Manual
 <p>Аргументы:</p>
 <div class="highlight"><pre><span></span>-d Ubuntu -u ravil -- bash -c "sleep infinity"
 </pre></div>
-<p>Команда запускает Ubuntu в WSL и оставляет внутри него работающий процесс <code>sleep infinity</code>. Это необходимо потому, что WSL может автоматически завершить работу дистрибутива, если внутри него не осталось активных процессов.</p>
+<p>Команда запускает Ubuntu в WSL и оставляет внутри него работающий процесс <code>sleep infinity</code>. Это позволяет поддерживать дистрибутив WSL в состоянии Running, даже когда внутри него нет других пользовательских процессов.</p>
 <p>При этом PostgreSQL запускается автоматически средствами <code>systemd</code>.</p>
 <p>Проверка:</p>
 <div class="highlight"><pre><span></span><span class="n">wsl</span> <span class="n">-l</span> <span class="n">-v</span>
