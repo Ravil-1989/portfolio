@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>collect_weather_data</title><script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=5-KKfWEhe5WxjmccLBAuUjM9VjdM9JK5hbn1gRrjGKW1jd1jtDRVHglHoeKdepzNmxdIz7ODctmYuivXT9sVitSkhLxKUTI6nlkLYuJwNx9eQghvCTy9XlbW0n9EOMVLZC8kfbMONFEmWARyV9hQmiT0x9wcG4mZbsrFHlLc7RFjLeZ4eT10DylaWmyxDbCt7QzK8HDt2wsP8c3EPvv9nOC2DJR5cmLtIbxhCJofItHg3jolvk-XAJwPco4iraS2aDknJpJwUYCfI-EL6DHBgJrnZ1kIQkq3rJrPHpATRjxsIR3fiQ-imdYXb5vFh3DqCIbSL-STGTvYKDoHZYC9c4XuWsD47VeLd3IYLB7eMvS846BqtGJ-XhZH9TfmmNMe4J9eq3XS-1FB5ljx70UqzT81hxe6jHgTUm4ia-SXb7pVxYmlGfq9q1R8oOAoKwSVK4BezX5X-zHQHkNwgU-aK8wcbNKqvinGqEOMOZekI3Jeuw1adp70EkAML1tC7IzkoB0JYm3pLKrL6kbhYIECA6syWUaaRak9O_yqDui7Nno_rCtzJgj4QUZowRUYn0mLR9ArDGh7P6QKEv3Oy21ZM6WBOFvArxhnlPBkpoxk7cZn6CYOU6KO0Vse911cyPiZesolhA-pXY6szR-3suePXAf_p857llHB2uM6-ZBkxhB8VFzlN1sGHiW15yqsLPedip6MZCj3G6qW1TozCxoaAQs-9VAgaUup_7-XqTfi2wxh8pt1-1ctOYhuu6VKYM1ZprqRU6zuGhqDkoV0-3TyyA" charset="UTF-8"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>collect_weather_data</title><script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=VKr_Kd9w7sKDSZO3PTiKunNnYog2Rc20kNWiAl8kG_KhQBRfY6FnljC9DcVpZ3Jc1LkIbK21OkE8Y2HngSHKi-F2HZwfyPbXDdGXcjgSb8TLrlJDR7wgNrb6cj6ugDvF7tXs9BVX93YJwXOQf2wXZo0W4CcAt7kUYV2UUyigRBT0WLZLWvrlbpl_WLGBHvCwVQWvIUCM20gGrVcMnQpyPOUGx51uNu6CtWpqcid1QwefDUIbQBdZf_-LJ6YuohrPKIM2f3w13ZUIdMlbigIlO7N4Imk9NDRyKGUa33Mll1BakJY1zzIc-QQmTFC-6rHj04GnxHhxRrrCZFZdcSAcoEKEv0MR4Rn9uebLm43nbXObHFUSd6GWBSKYDLH4PTdVrCq2Yt3PZt8NclZyW0C25odvnI24ia9R0MOsujZJ7D5RQfueI9aMGK2lePioDE5W0h6Jhgxk2I1Rpdc-aH6mLymqDBXTk6Z9Dwfytj6Jn9MPOOvcLegUT6glJbGYmdHlSaBfbd97uJYUojC6kkgOjAe5lnXfT_I2zTnZnqKvbsF3eUf6lzskKsz_ZGQhBqvQPnf0Vcqq7hzisAmmv-aCVcTt67VBs7YEkFBOD7IEBSMSrBmSzGP7pGucoXApY1Z2B6Af3KyrOWKbZdsp1BO02Pe56KN0UdwXxgYrzSpz9bsUKWbIZF6yks3xFEUza9ifr63G37miH6T7j6B2aEPS2Q_P1_dEjK8Jlo35CR56mrG7Oj8rEgcUZmnG0jiWWNs-8TrzQF1Aluos4uBP5c4k4Q" charset="UTF-8"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -11915,7 +11915,7 @@ all_russian_cities
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>После восстановления проброса портов подключение к базе данных <code>all_russian_cities</code> в Yandex DataLens было успешно восстановлено.</p>
+<p>После восстановления <code>portproxy</code> подключение к базе данных <code>all_russian_cities</code> в Yandex DataLens было успешно восстановлено.</p>
 <p>Таким образом, причиной ошибки после обновления Windows 11 стала потеря прежней схемы подключения к PostgreSQL в WSL: порт 5432 был занят отдельным экземпляром PostgreSQL 17 в Windows, а portproxy к PostgreSQL 16 в WSL отсутствовал.</p>
 </div>
 </div>
@@ -12028,7 +12028,7 @@ postgresql-x64-17 Stopped    Manual
 <p>Аргументы:</p>
 <div class="highlight"><pre><span></span>-d Ubuntu -u ravil -- bash -c "sleep infinity"
 </pre></div>
-<p>Команда запускает Ubuntu в WSL и оставляет внутри него работающий процесс <code>sleep infinity</code>. Это позволяет поддерживать дистрибутив WSL в состоянии Running, даже когда внутри него нет других пользовательских процессов.</p>
+<p>Команда запускает Ubuntu в WSL и оставляет внутри него работающий процесс <code>sleep infinity</code>. Это позволяет поддерживать дистрибутив WSL в состоянии <code>Running</code>, даже когда внутри него нет других пользовательских процессов.</p>
 <p>При этом PostgreSQL запускается автоматически средствами <code>systemd</code>.</p>
 <p>Проверка:</p>
 <div class="highlight"><pre><span></span><span class="n">wsl</span> <span class="n">-l</span> <span class="n">-v</span>
